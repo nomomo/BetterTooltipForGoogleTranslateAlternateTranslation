@@ -10,7 +10,7 @@
 // @grant       GM_getValue
 // @grant       GM.setValue
 // @grant       GM_setValue
-// @include     /^https?:\/\/translate\.google\./*
+// @include     https://translate.google.*
 // @require     https://greasemonkey.github.io/gm4-polyfill/gm4-polyfill.js
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 // @run-at      document-start
