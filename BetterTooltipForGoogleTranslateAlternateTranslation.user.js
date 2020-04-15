@@ -3,7 +3,7 @@
 // @namespace   BetterTooltipForGoogleTranslateAlternateTranslation
 // @author      Nomomo
 // @description Alternative translation tooltips are not cropped by the screen even if there is a lot of content to translate through Google Translate.
-// @version     0.0.1
+// @version     0.0.2
 // @grant       GM.addStyle
 // @grant       GM_addStyle
 // @grant       GM.getValue
@@ -47,7 +47,7 @@
     }
     $(document).on("ready", () => {
         makeDOE();
-        $("div.gt-ft-promos").append("<a id='Better_Tooltip_Setting'><span class='gt-ft-mkt-icon' style='cursor:pointer;'>Better Tooltip Setting</span></a>");
+        $("div.feedback-link").before("<a id='Better_Tooltip_Setting' style='font-size:11px;float:left;padding-top:5px'><span class='gt-ft-mkt-icon' style='cursor:pointer;'>Better Tooltip Setting</span></a>");
     });
 
     $(document).on("click", "#Better_Tooltip_Setting", async(event) => {
